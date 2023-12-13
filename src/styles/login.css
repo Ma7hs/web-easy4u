@@ -1,0 +1,102 @@
+.login {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  width: 100vw;
+}
+
+.login-action {
+  display: grid;
+  place-self: center;
+}
+
+.login-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 19px 40px 0px rgba(0, 0, 0, 0.05);
+  max-width: 598px;
+  height: 748px;
+  justify-content: center;
+}
+
+.login__image {
+  justify-self: center;
+  align-self: center;
+}
+
+.subtitle {
+  font-weight: 300;
+  display: flex;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 35px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  font-weight: 300;
+}
+
+input {
+  background-color: #f5e9d6;
+  font-size: 0.875rem;
+  height: 46px;
+  border-radius: var(--input-border-radius);
+  padding: 10px 0px;
+  font-family: "Poppins", sans-serif;
+  width: 478px;
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.form__email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__password-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.forgot-password {
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.login__button {
+  width: 152px;
+  border-radius: 22px;
+  height: 46px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  align-self: center;
+  font-weight: 600;
+}
+
+.banner {
+  background-color: #ffceae;
+  width: 100%;
+}
+
+.banner__image {
+  transform: translateX(-80px);
+}
+
+.error{
+  text-align: center;
+  color: #C4C4C4;
+  font-size: 1rem;
+}

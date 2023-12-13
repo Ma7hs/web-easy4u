@@ -1,0 +1,10 @@
+#dashboard {
+  min-height: 100vh;
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  max-height: 100vh;
+  overflow-y: scroll;
+}

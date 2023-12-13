@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #FF6C44;
+  --white-color: #ffffff;
+  --text-color: #4F4F4F;
+  --background-color: #f8f8f8;
+  --stroke-color: #b4b4b4;
+  --button-border-radius: 8px;
+  --input-border-radius: 4px;
+}

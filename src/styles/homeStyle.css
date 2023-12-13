@@ -1,0 +1,259 @@
+.home {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "credit orders"
+    "products orders";
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  overflow-y: scroll;
+}
+
+.home__credit-container {
+  grid-area: credit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--background-color);
+  padding: 22px 28px;
+  width: 492px;
+  height: 270px;
+}
+
+.credit__texts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texts-introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.credit__title {
+  font-weight: 600;
+  color: #25396f;
+  font-size: 1.125rem;
+}
+
+.credit__subtitle {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.credit__verify {
+  color: #19777a;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.credit__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 398px;
+  height: 92px;
+  background: linear-gradient(
+      0deg,
+      rgba(188, 187, 187, 0.03) 0%,
+      rgba(188, 187, 187, 0.03) 100%
+    ),
+    #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+}
+
+.credit-button__text {
+  font-weight: 600;
+}
+
+.home__products-container {
+  grid-area: products;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 22px 28px;
+  width: 492px;
+  height: 270px;
+}
+
+.products__texts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__title {
+  font-weight: 600;
+  color: #25396f;
+  font-size: 1.125rem;
+}
+
+.products__subtitle {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.products__verify {
+  color: #19777a;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.products__cards {
+  display: flex;
+  gap: 9px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.card__name {
+  color: #25396f;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.home__orders-container {
+  grid-area: orders;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 436px;
+  height: 768px;
+  padding: 20px;
+}
+
+.orders__texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orders__title {
+  display: flex;
+  align-items: center;
+  color: #0a043c;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.orders__title::before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #89e9ff;
+  border-radius: 100%;
+}
+
+.orders__title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title__filter {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  transform: rotate(-90deg);
+}
+
+.title__title {
+  font-weight: 300;
+  color: #0a043c;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.orders__statistics {
+  display: flex;
+  gap: 32px;
+  margin-top: 38px;
+  margin-bottom: 50px;
+}
+
+.statistic__amount {
+  color: #0a043c;
+  font-weight: 600;
+}
+
+.statistc__day {
+  font-weight: 300;
+  font-size: 0.75rem;
+  border-left: 1px solid #07102f;
+  padding-left: 12px;
+  padding-top: 3px;
+}
+
+.orders__orders {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 75vh;
+  overflow-y: scroll;
+}
+
+.order-home {
+  display: grid;
+  grid-template-areas:
+    "image title price"
+    "image number price";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr;
+  box-shadow: 0px 31.299px 59.303px 0px rgba(10, 4, 60, 0.06);
+  height: 56px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.order__image {
+  grid-area: image;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  margin-right: 14px;
+}
+
+.order-home__title {
+  grid-area: title;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0a043c;
+}
+
+.order__number {
+  grid-area: number;
+  font-weight: 300;
+  font-size: 0.625rem;
+}
+
+.order__price {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #0a043c;
+  padding-right: 10px;
+}
+
+.orders__see-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 62px;
+}

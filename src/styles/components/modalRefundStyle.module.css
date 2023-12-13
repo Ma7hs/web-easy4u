@@ -1,0 +1,99 @@
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 24px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  min-width: 546px;
+  max-width: fit-content;
+  min-height: 246px;
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #dee2e6;
+  background-color: #fff;
+  padding: 36px 40px;
+}
+
+.popup__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-self: start;
+}
+
+.popup__title {
+  grid-area: title;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: start;
+  width: 100%;
+  height: 100%;
+  margin-top: 8px;
+}
+
+.popup__text {
+  text-align: start;
+  width: 100%;
+  font-weight: 400;
+}
+
+.popup-action-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popup__checkbox {
+  align-self: start;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.button__cancel {
+  border: 1px solid #4f4f4f;
+  height: 44px;
+  border-radius: var(--button-border-radius);
+  width: 220px;
+  background-color: transparent;
+}
+
+.button__confirm {
+  height: 44px;
+  border-radius: var(--button-border-radius);
+  width: 220px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.popup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.popup__close {
+  background-color: #e5e5e5;
+  border-radius: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  cursor: pointer;
+}

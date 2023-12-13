@@ -1,0 +1,125 @@
+#orders {
+  flex-grow: 1;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 68px;
+  margin-top: 30px;
+}
+
+.orders {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 24px 24px 24px;
+
+}
+
+.order {
+  width: 364px;
+  height: 322px;
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08),
+    0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__texts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.order__subtitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.order__email {
+  font-size: 0.75rem;
+}
+
+.order__foods {
+  background-color: #e5e5e5;
+  width: 304px;
+  height: 128px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 0px 16px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.food__name {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.food__price {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: end;
+}
+
+.price__price {
+  color: var(--primary-color);
+}
+
+.order__buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.button__cancel {
+  border: 1px solid #4f4f4f;
+  height: 44px;
+  border-radius: var(--button-border-radius);
+  width: 130px;
+  background-color: transparent;
+}
+
+.button__confirm {
+  height: 44px;
+  border-radius: var(--button-border-radius);
+  width: 130px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.orders-container {
+  display: flex;
+  height: 100vh; 
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  color: var(--primary-color); 
+}
+
+.orders {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.next-orders {
+  padding-bottom: 24px;
+}

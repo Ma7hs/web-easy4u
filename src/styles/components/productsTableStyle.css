@@ -1,0 +1,47 @@
+.table-container {
+    max-width: 1224px;
+    box-shadow: none;
+}
+
+.table__title {
+  background-color: var(--primary-color);
+  color: var(--white-color) !important;
+  font-family: "Poppins" !important;
+  font-weight: 600;
+  font-size: 0.75rem;
+
+}
+
+.table__title:first-child {
+  padding-left: 34px;
+}
+
+.table__item {
+  background-color: rgba(231, 231, 231, 1);
+  font-family: "Poppins" !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.table__item-image {
+  padding-left: 34px !important;
+}
+
+.item__image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.table__item-actions {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.table__item-actions img {
+    cursor: pointer;
+}

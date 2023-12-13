@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+  width: 10px; /* Largura do scrollbar */
+  height: 10px; /* Altura do scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff6c44; /* Cor do botão de rolagem */
+  border-radius: 5px; /* Raio das bordas do botão de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ccc; /* Cor da trilha do scrollbar */
+}

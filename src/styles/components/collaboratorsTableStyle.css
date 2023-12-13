@@ -1,0 +1,37 @@
+.table-container {
+  max-width: 1224px;
+  box-shadow: none;
+}
+
+.table__title {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.table__title:first-child {
+  padding-left: 34px;
+}
+
+.table__item {
+  background-color: rgba(231, 231, 231, 1);
+  font-family: "Poppins";
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.table__item-name {
+  padding-left: 34px !important;
+}
+
+.table__item-actions {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.item__icon {
+  cursor: pointer;
+}

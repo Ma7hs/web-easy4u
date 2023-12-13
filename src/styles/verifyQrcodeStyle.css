@@ -1,0 +1,36 @@
+#qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+
+.qrcode-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.qrcode__title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.qrcode__button {
+  height: 56px;
+  border-radius: 30px;
+  width: 338px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+  width: 100vw;
+}
